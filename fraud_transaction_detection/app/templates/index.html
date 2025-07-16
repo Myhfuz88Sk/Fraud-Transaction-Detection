@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fraud Transaction Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Fraud Transaction Detector</h2>
+    <input type="number" id="amount" placeholder="Transaction Amount">
+    <input type="number" id="hour" placeholder="Hour (0-23)">
+    <input type="number" id="day" placeholder="Day of Month (1-31)">
+    <input type="number" id="month" placeholder="Month (1-12)">
+    <button onclick="submitForm()">Check Fraud</button>
+    <p id="result" style="text-align:center; font-weight: bold; margin-top: 20px;"></p>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
